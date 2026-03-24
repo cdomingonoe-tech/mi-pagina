@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>lifile-noolcri-greenglow</title>
+
+```
+<style>
+    body {
+        font-family: Arial;
+        background-color: #f4f4f4;
+        text-align: center;
+    }
+
+    header {
+        background: black;
+        color: white;
+        padding: 20px;
+    }
+
+    .container {
+        margin: 20px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: darkblue;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Marca Pro</title>
+
+  <!-- Stripe -->
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <style>
+    body {font-family: Arial; margin:0; background:#0f0f0f; color:white;}
+    header {padding:20px; text-align:center; font-size:24px; font-weight:bold;}
+    .container {padding:20px; display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:20px;}
+    .card {background:#1a1a1a; border-radius:20px; padding:15px; box-shadow:0 10px 30px rgba(0,0,0,0.5); transition:0.3s;}
+    .card:hover {transform:scale(1.05);}
+    .card img {width:100%; border-radius:15px;}
+    .price {color:#00ff88; font-size:20px; margin:10px 0;}
+    button {background:#00ff88; color:black; padding:12px; border:none; border-radius:10px; cursor:pointer; width:100%; font-weight:bold;}
+    button:hover {background:#00cc6a;}
+    .whatsapp {position:fixed; bottom:20px; right:20px; background:#25D366; padding:15px; border-radius:50%; text-decoration:none; color:white; font-size:20px;}
+  </style>
+</head>
+<body>
+
+<header>
+  MI MARCA 🔥 (TIENDA OFICIAL)
+</header>
+
+<section class="container">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300">
+    <h2>Zapatos Pro</h2>
+    <p class="price">$50</p>
+    <button onclick="pagar(50)">Comprar ahora</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300">
+    <h2>Camiseta Premium</h2>
+    <p class="price">$25</p>
+    <button onclick="pagar(25)">Comprar ahora</button>
+  </div>
+
+</section>
+
+<!-- WhatsApp -->
+<a class="whatsapp" href="https://wa.me/1234567890" target="_blank">💬</a>
+
+<script>
+
+// ⚠️ IMPORTANTE: REEMPLAZA CON TU CLAVE REAL DE STRIPE
+const stripe = Stripe("TU_CLAVE_PUBLICA_AQUI");
+
+function pagar(precio){
+  alert("Aquí conectarás Stripe Checkout (te explico abajo)");
+}
+
+</script>
+
+</body>
+</html>
